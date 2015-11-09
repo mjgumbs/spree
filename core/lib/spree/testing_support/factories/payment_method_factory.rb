@@ -7,6 +7,10 @@ FactoryGirl.define do
     name 'Credit Card'
   end
 
+  factory :cash_payment_method, class: Spree::PaymentMethod::Cash do |member|
+    name 'Cash'
+  end
+
   # authorize.net was moved to spree_gateway.
   # Leaving this factory in place with bogus in case anyone is using it.
   factory :simple_credit_card_payment_method, class: Spree::Gateway::BogusSimple do

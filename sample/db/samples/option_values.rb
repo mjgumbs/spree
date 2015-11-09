@@ -5,27 +5,15 @@ color = Spree::OptionType.find_by_presentation!("Color")
 
 Spree::OptionValue.create!([
   {
-    :name => "Small",
-    :presentation => "S",
+    :name => "King",
+    :presentation => "K",
     :position => 1,
     :option_type => size
   },
   {
-    :name => "Medium",
-    :presentation => "M",
+    :name => "Quen",
+    :presentation => "Q",
     :position => 2,
-    :option_type => size
-  },
-  {
-    :name => "Large",
-    :presentation => "L",
-    :position => 3,
-    :option_type => size
-  },
-  {
-    :name => "Extra Large",
-    :presentation => "XL",
-    :position => 4,
     :option_type => size
   },
   {

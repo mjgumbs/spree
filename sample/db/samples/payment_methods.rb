@@ -5,3 +5,11 @@ Spree::PaymentMethod::Check.create!(
     active: true
   }
 )
+
+Spree::PaymentMethod::Cash.create!(
+  {
+      name: "Cash",
+      description: "Pay with cash",
+      active: true
+  }
+)
